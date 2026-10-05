@@ -1,0 +1,214 @@
+{
+  "profile": {
+    "id": "demo-student",
+    "name": "Sanjana Banjare",
+    "role": "student",
+    "bio": "Curious learner · Exploring programming and AI",
+    "dailyGoalMinutes": 20,
+    "preferences": {
+      "theme": "system",
+      "language": "English",
+      "accessibility": []
+    },
+    "accountId": "EV-DEMO-001",
+    "age": null,
+    "institution": "Personal workspace",
+    "joinedAt": "2026-10-04"
+  },
+  "courses": [
+    {
+      "id": "dsa-binary-search",
+      "category": "Programming · DSA",
+      "title": "Data structures, made visual",
+      "description": "Build intuition through short interactive challenges.",
+      "duration": "4.5 hours",
+      "level": "Beginner",
+      "icon": "⌘"
+    },
+    {
+      "id": "ml-foundations",
+      "category": "AI & Machine Learning",
+      "title": "Machine learning foundations",
+      "description": "Understand how models learn from examples.",
+      "duration": "6 hours",
+      "level": "Beginner",
+      "icon": "✳"
+    },
+    {
+      "id": "forces-motion",
+      "category": "Science · Physics",
+      "title": "Forces in motion",
+      "description": "Explore force and momentum in a virtual lab.",
+      "duration": "3 hours",
+      "level": "Intermediate",
+      "icon": "▦"
+    },
+    {
+      "id": "ux-design",
+      "category": "Design · UX",
+      "title": "Designing for people",
+      "description": "Practice research, flows, and usable interfaces.",
+      "duration": "5 hours",
+      "level": "Intermediate",
+      "icon": "◎"
+    },
+    {
+      "id": "startup-basics",
+      "category": "Business",
+      "title": "Startup fundamentals",
+      "description": "Turn a problem into a tested product idea.",
+      "duration": "3.5 hours",
+      "level": "Beginner",
+      "icon": "▤"
+    },
+    {
+      "id": "english-practice",
+      "category": "Languages",
+      "title": "Everyday English practice",
+      "description": "Build confidence with guided speaking activities.",
+      "duration": "2 hours",
+      "level": "Beginner",
+      "icon": "文"
+    }
+  ],
+  "progress": {
+    "streakDays": 4,
+    "weeklyMinutes": 390,
+    "completedChallenges": 1,
+    "concepts": {
+      "sorted-arrays": {
+        "mastery": 88,
+        "evidenceCount": 4
+      },
+      "search-boundaries": {
+        "mastery": 53,
+        "evidenceCount": 3
+      },
+      "time-complexity": {
+        "mastery": 24,
+        "evidenceCount": 1
+      }
+    },
+    "visionExperimentsCompleted": 1
+  },
+  "attempts": [
+    {
+      "id": "fe703235-e4be-4e91-ae0f-666370cdf019",
+      "activityId": "binary-search-boundary",
+      "answer": "right",
+      "correct": true,
+      "createdAt": "2026-10-05T05:04:51.283Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "8774e6ba-4ef2-4faf-ae05-d2135d40a943",
+      "title": "Class board · Binary search",
+      "content": "Binary search\n\nEach comparison removes half of the remaining range.\n\n3\n8\n12\n17\n21\n29\n34\n\nlow   +   (high − low) ÷ 2   →   midpoint\n\nAdd a thought…",
+      "updatedAt": "2026-10-05T04:58:29.381Z"
+    },
+    {
+      "id": "note-binary-search",
+      "title": "Binary search — key idea",
+      "content": "Sorted data lets us remove half the search space after each comparison. Check low, high, and midpoint carefully.",
+      "updatedAt": "2026-10-04T08:00:00.000Z"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "assignment-binary-search",
+      "title": "Binary Search Explorer",
+      "course": "Data Structures, Made Visual",
+      "description": "Trace binary search on three sorted arrays. Show each low, high, and midpoint update, then explain why the discarded half cannot contain the target.",
+      "dueDate": "2026-10-12",
+      "status": "assigned",
+      "submission": "",
+      "feedback": ""
+    }
+  ],
+  "teacherData": {
+    "schedule": [],
+    "attendance": [],
+    "practice": [],
+    "tests": []
+  },
+  "notifications": [
+    {
+      "id": "notice-welcome",
+      "title": "Welcome to EduVerse",
+      "message": "Your first coding lab is ready. Try the binary-search challenge when you have five minutes.",
+      "date": "2026-10-05",
+      "read": false
+    },
+    {
+      "id": "notice-assignment",
+      "title": "New assignment",
+      "message": "Binary Search Explorer is due October 12.",
+      "date": "2026-10-05",
+      "read": false
+    }
+  ],
+  "feedback": [],
+  "resources": [
+    {
+      "id": "binary-search-notes",
+      "title": "Binary search: visual notes",
+      "type": "Notes",
+      "course": "Data Structures, Made Visual",
+      "duration": "6 pages",
+      "summary": "A step-by-step guide to sorted arrays, midpoint selection, boundary updates, and common off-by-one errors.",
+      "body": "Start with low = 0 and high = n − 1. Pick a midpoint. If the target is smaller, set high = mid − 1. If it is larger, set low = mid + 1. Stop when low > high. The loop is O(log n) because each step halves the remaining range."
+    },
+    {
+      "id": "sorted-data-video",
+      "title": "When sorted data helps",
+      "type": "Video",
+      "course": "Data Structures, Made Visual",
+      "duration": "8 minutes",
+      "summary": "See how ordering turns a linear scan into repeated half-range decisions.",
+      "body": "A sorted list carries information about every value around the midpoint. This walkthrough compares linear scan and binary search on the same list and explains the prerequisite: the data must be sorted."
+    },
+    {
+      "id": "boundary-cheatsheet",
+      "title": "Boundary conditions cheatsheet",
+      "type": "Quick reference",
+      "course": "Data Structures, Made Visual",
+      "duration": "2 min read",
+      "summary": "Keep inclusive bounds consistent and avoid repeated midpoints.",
+      "body": "For inclusive bounds use low = 0, high = n − 1. Continue while low <= high. When target > array[mid], low = mid + 1. When target < array[mid], high = mid − 1."
+    },
+    {
+      "id": "practice-set",
+      "title": "Binary search practice set",
+      "type": "Interactive practice",
+      "course": "Data Structures, Made Visual",
+      "duration": "10 minutes",
+      "summary": "Try target present, absent, and edge-value cases with instant feedback.",
+      "body": "Practice three arrays: target at the first value, target at the final value, and target absent. Explain why each boundary update keeps all possible answers in the search range."
+    }
+  ],
+  "vision": {
+    "events": [
+      {
+        "id": "4df9426d-bdae-4f94-a3e3-a129ea16f175",
+        "experimentId": "air-keyboard",
+        "type": "completed",
+        "score": 100,
+        "createdAt": "2026-10-05T07:58:56.598Z"
+      }
+    ],
+    "completed": {
+      "air-keyboard": {
+        "completedAt": "2026-10-05T07:58:56.598Z",
+        "score": 100
+      }
+    },
+    "badges": [
+      {
+        "id": "air-typist",
+        "title": "Air Typist",
+        "awardedAt": "2026-10-05T07:58:56.598Z"
+      }
+    ]
+  }
+}
